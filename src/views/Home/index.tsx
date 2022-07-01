@@ -10,7 +10,7 @@ import { swapSectionData, earnSectionData, cakeSectionData } from './components/
 import MetricsSection from './components/MetricsSection'
 import SalesSection from './components/SalesSection'
 import WinSection from './components/WinSection'
-import FarmsPoolsRow from './components/FarmsPoolsRow'
+// import FarmsPoolsRow from './components/FarmsPoolsRow' // TODO: Deploy testnet farms and pools
 import Footer from './components/Footer'
 import CakeDataRow from './components/CakeDataRow'
 import { WedgeTopLeft, InnerWedgeWrapper, OuterWedgeWrapper, WedgeTopRight } from './components/WedgeSvgs'
@@ -62,12 +62,12 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        {account && (
+        {/* {account && (
           <UserBannerWrapper>
             <UserBanner />
           </UserBannerWrapper>
-        )}
-        <MultipleBanner />
+        )} */}
+        {/* <MultipleBanner /> */}
         <Hero />
       </StyledHeroSection>
       <PageSection
@@ -95,7 +95,7 @@ const Home: React.FC = () => {
         </OuterWedgeWrapper>
         <SalesSection {...swapSectionData(t)} />
       </PageSection>
-      <PageSection
+      {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.gradients.cardHeader}
         index={2}
@@ -108,8 +108,8 @@ const Home: React.FC = () => {
         </OuterWedgeWrapper>
         <SalesSection {...earnSectionData(t)} />
         <FarmsPoolsRow />
-      </PageSection>
-      <PageSection
+      </PageSection> */}
+      {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={
           theme.isDark
@@ -120,8 +120,8 @@ const Home: React.FC = () => {
         hasCurvedDivider={false}
       >
         <WinSection />
-      </PageSection>
-      <PageSection
+      </PageSection> */}
+      {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.background}
         index={2}
@@ -129,7 +129,7 @@ const Home: React.FC = () => {
       >
         <SalesSection {...cakeSectionData(t)} />
         <CakeDataRow />
-      </PageSection>
+      </PageSection> */}
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background="linear-gradient(180deg, #7645D9 0%, #5121B1 100%)"
